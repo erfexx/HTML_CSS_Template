@@ -1,0 +1,445 @@
+*,
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+
+.navigation-bar {
+    width: 100%;
+    /* i'm assuming full width */
+    height: 80px;
+    /* change it to desired width */
+    background-color: rgb(0, 0, 0);
+    /* change to desired color */
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: auto;
+    margin: 8px auto;
+    padding: 0 20px;
+    /* if you want it vertically middle of the navbar. */
+}
+
+.navigation-bar>a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    padding: 0 20px;
+    height: 80px;
+    /* if you want it to take the full height of the bar */
+    line-height: 80px;
+    /* if you want it vertically middle of the navbar */
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(201, 69, 87);
+}
+
+.navigation-bar>.dropdown {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    padding: 0 20px;
+    line-height: 80px;
+    color: white;
+}
+
+.dropdown:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(201, 69, 87);
+}
+
+.navigation-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navigation-bar .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navigation-bar .dropdown-content a:hover {
+    background-color: rgb(201, 69, 87);
+}
+
+.navigation-bar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*  */
+
+.carousel-container {
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container .carousel-slide {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-container .carousel-slide img {
+    width: 100%;
+}
+
+.btnCtrl {
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px;
+}
+
+.btnCtrl button {
+    margin: 0px 20px;
+    background-color: transparent;
+}
+
+/*  */
+
+.content {
+    margin: 20px;
+    padding: 10px 20px;
+    color: rgb(201, 69, 87);
+    text-align: center;
+}
+
+.content .isi {
+    margin: 0px;
+    padding: 20px 100px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.content .isi .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*  */
+
+.promotions .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 380px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.promotions .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.promotions .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+/*  */
+
+.latest .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 720px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.latest .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.latest .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+/*  */
+
+.sign .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.sign .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.sign .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+
+/*  */
+
+.best-seller .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 280px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.best-seller .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.best-seller .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+/*  */
+
+.recommended .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.recommended .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.recommended .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+/*  */
+
+.news .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.news .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.news .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.news .isi .row .card p {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 11px;
+    text-align: justify;
+}
+
+.news .isi .row .card a {
+    margin: 10px 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    float: left;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(201, 69, 87);
+}
+
+.news .isi .row .card a:hover {
+    background-color: rgb(179, 52, 69);
+}
+
+
+/* .news .isi .row .card .card-inner{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 120px;
+} */
+
+/*  */
+
+.promotion .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.promotion .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.promotion .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+/*  */
+
+.makeup .isi .row .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 180px;
+    margin: 10px 15px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+    height: auto;
+}
+
+.makeup .isi .row .card img {
+    width: 90%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.makeup .isi .row .card h3 {
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+/*  */
+
+
+
+
+/*  */
+
+.content .isi .form {
+    display: flex;
+    justify-content: start;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(201, 69, 87);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(179, 52, 69);
+}
+
+
+
+/*  */
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(201, 69, 87);
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
